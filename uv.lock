@@ -672,7 +672,7 @@ wheels = [
 ]
 
 [[package]]
-name = "house-price"
+name = "hotel-reservations"
 version = "0.0.1"
 source = { virtual = "." }
 dependencies = [
