@@ -1,11 +1,5 @@
 import logging
-import os
-import sys
-
 import yaml
-
-sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
-
 from hotel_reservations.data_processor import DataProcessor
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")

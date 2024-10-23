@@ -1,7 +1,7 @@
 [project]
-name = "house-price"
+name = "hotel_reservations"
 version = "0.0.1"
-description = "Housing prices project"
+description = "hhotel reservations project"
 requires-python = ">=3.11, <3.12"
 dependencies = ["lightgbm>=4.5.0, <5",
                 "scikit-learn>=1.5.1, <2",
