@@ -20,7 +20,7 @@ To create a new environment and create a lockfile, run:
 
 ```
 uv venv -p 3.11.0 venv
-source venv/bin/activate
+.venv\Scripts\activate
 uv pip install -r pyproject.toml --all-extras
 uv lock
 ```
