@@ -1,0 +1,9 @@
+bundle:
+  name: marvelous-databricks-course-Gijsvoogd
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: redacted
