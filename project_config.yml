@@ -1,26 +1,29 @@
 catalog_name: cmo_talive
 schema_name: mlops
-
 target: 'booking_status'
 num_features:
-  - 'no_of_adults'
-  - 'no_of_children'
-  - 'no_of_weekend_nights'
-  - 'no_of_week_nights'
-  - 'lead_time'
-  - 'arrival_year'
-  - 'arrival_month'
-  - 'arrival_date'
-  - 'no_of_previous_cancellations'
-  - 'no_of_previous_bookings_not_canceled'
-  - 'avg_price_per_room'
-  - 'no_of_special_requests'
-  - 'required_car_parking_space'
-  - 'repeated_guest'
+  - no_of_adults
+  - no_of_children
+  - no_of_weekend_nights
+  - no_of_week_nights
+  - lead_time
+  - no_of_previous_cancellations
+  - no_of_previous_bookings_not_canceled
+  - avg_price_per_room
+  - no_of_special_requests
 cat_features:
-  - 'type_of_meal_plan'
-  - 'room_type_reserved'
-  - 'market_segment_type'
+  - Booking_ID
+  - type_of_meal_plan
+  - required_car_parking_space
+  - room_type_reserved
+  - market_segment_type
+  - repeated_guest
+func_features:
+  - total_guests
+  - total_nights
+  - cancellation_rate
+  - special_request_ratio
+  - family_indicator
 parameters:
   n_estimators: 100
   learning_rate: 0.1
