@@ -26,9 +26,9 @@ class ModelTrainer:
         self.experiment_name = "/Shared/hotel-reservations-basic"
         self.model_name = f"{config.catalog_name}.{config.schema_name}.hotel_reservations_model"
         self.mlflow_tracking_uri = "databricks"
-        self.mlflow_registry_uri = "databricks-uc"  # Use 'databricks-uc' for Unity Catalog
-        self.git_sha = "ffa63b430205ff7"  # Replace with your actual git SHA
-        self.branch = "main"  # Replace with your branch name
+        self.mlflow_registry_uri = "databricks-uc"
+        self.git_sha = "ffa63b430205ff7"
+        self.branch = "week_2"
         self.run_id = None
 
         # Set MLflow tracking and registry URIs

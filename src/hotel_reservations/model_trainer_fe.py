@@ -28,7 +28,7 @@ class ModelTrainer:
         self.mlflow_tracking_uri = "databricks"
         self.mlflow_registry_uri = "databricks-uc"
         self.git_sha = "ffa63b430205ff7"
-        self.branch = "main"
+        self.branch = "week_2"
         self.run_id = None
 
         mlflow.set_tracking_uri(self.mlflow_tracking_uri)
