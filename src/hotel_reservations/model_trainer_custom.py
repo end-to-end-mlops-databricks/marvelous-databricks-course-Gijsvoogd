@@ -33,7 +33,7 @@ class CustomModelTrainer:
         self.model_name = f"{config.catalog_name}.{config.schema_name}.hotel_reservations_custom_model"
         self.mlflow_tracking_uri = "databricks"
         self.mlflow_registry_uri = "databricks-uc"
-        self.git_sha = "your_git_sha"
+        self.git_sha = "efbc674e8bb96394c7ff9d7aa9c24d3172462f06"
         self.branch = "week_2"
         self.run_id = None
 
@@ -125,12 +125,11 @@ class CustomModelTrainer:
             )
             mlflow.log_input(dataset, context="training")
 
-            # Define the conda environment for the model (if needed)
+            # Define the conda environment for the model (this is optional)
             conda_env = _mlflow_conda_env(
                 additional_conda_deps=None,
                 additional_pip_deps=[
-                    # List any additional pip dependencies here
-                    # For example: "scikit-learn==1.0.2"
+                    "dist/hotel_reservations-0.0.1-py3-none-any.whl",
                 ],
                 additional_conda_channels=None,
             )
