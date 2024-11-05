@@ -1,7 +1,7 @@
 import logging
 
-from src.hotel_reservations.config import ProjectConfig
-from src.hotel_reservations.model_trainer import ModelTrainer
+from hotel_reservations.config import ProjectConfig
+from hotel_reservations.model_trainer import ModelTrainer
 
 
 def main():

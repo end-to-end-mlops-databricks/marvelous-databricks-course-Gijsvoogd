@@ -2,9 +2,9 @@ import logging
 
 from pyspark.sql import SparkSession
 
-from src.hotel_reservations.config import ProjectConfig
-from src.hotel_reservations.data_processor import DataProcessor
-from src.hotel_reservations.model_trainer_custom import CustomModelTrainer
+from hotel_reservations.config import ProjectConfig
+from hotel_reservations.data_processor import DataProcessor
+from hotel_reservations.model_trainer_custom import CustomModelTrainer
 
 
 def main():

@@ -3,7 +3,7 @@ import logging
 import yaml
 from pyspark.sql import SparkSession
 
-from src.hotel_reservations.data_processor import DataProcessor
+from hotel_reservations.data_processor import DataProcessor
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)

@@ -1,6 +1,6 @@
 import logging
 
-from src.hotel_reservations.experiment import ExperimentManager
+from hotel_reservations.experiment import ExperimentManager
 
 
 def main():
